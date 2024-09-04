@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #2e2e2e;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+  }
+  
+  .stopwatch {
+    text-align: center;
+    background: linear-gradient(145deg, #383838, #2c2c2c);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px #1a1a1a, -5px -5px 20px #444;
+    max-width: 300px;
+  }
+  
+  #display {
+    font-size: 4em;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    color: #fff;
+    animation: pulse 1s infinite ease-in-out;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2b2b2b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+    background-color: #1b1b1b;
+  }
+  
+  #start {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  #pause {
+    background-color: #f39c12;
+    color: white;
+  }
+  
+  #reset {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  #lap {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  #laps {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    color: #e1e1e1;
+  }
+  
+  #laps li {
+    background: #2e2e2e;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px #1a1a1a, -2px -2px 5px #444;
+  }
+  
+  /* Display Pulse Effect */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.02);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
