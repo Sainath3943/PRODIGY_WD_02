@@ -29,7 +29,7 @@ function resetTimer() {
   isRunning = false;
   seconds = 0;
   displayTime();
-  laps.innerHTML = ""; // Clear laps
+  laps.innerHTML = ""; 
 }
 
 function displayTime() {
